@@ -1,0 +1,59 @@
+<!- Convert INR to USD to INR ->
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1><u>JavaScript value of gold price</u></h1>
+<br>
+<br>
+<h3>Today gold price ounce</h3>
+<p><input id="goldprice"> Indian Rupee</p>
+
+<p>Insert invalue of gold below:</p>
+
+<p> Quantity <input id="quantityinoz" onkeyup="convert('G')"> Ounce Rs.<input id="rs4oz"></p>
+
+<p> Quantity <input id="quantityingrams" onkeyup="convert('O')"> Grams <input id="rs4gm"> Rs.</p> 
+
+
+<script>
+function convert(quantity) {
+ 	var qx; 
+	var poz; 
+	var pgm;
+    if (quantity == "G") {
+	
+	//Convert OZ into Grams and Display in Grams field
+	//document.writeln(document.getElementById("goldprice").value);
+        qx = (document.getElementById("quantityinoz").value / 0.035274);
+        document.getElementById("quantityingrams").value = qx;
+	
+
+	//Find the Price in Rupees for the given Quantity in OZ 
+	poz = document.getElementById("quantityinoz").value * document.getElementById("goldprice").value;
+	document.getElementById("rs4oz").value = poz;
+
+	//Find the Price in Rupees for the given Quantity in Gm
+	pgm =  document.getElementById("rs4oz").value;
+	document.getElementById("rs4gm").value = pgm;
+    } 
+	else {
+        qx = document.getElementById("quantityingrams").value * 0.035274;
+        document.getElementById("quantityinoz").value = qx;
+
+	//Find the Price in Rupees for the given Quantity in OZ 
+
+
+
+	//Find the Price in Rupees for the given Quantity in Gm
+
+
+
+    }
+}
+</script>
+
+
+</body>
+</html>
