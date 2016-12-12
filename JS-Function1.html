@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.write("Hello, Did you call me!");
+	var a = 4;
+	var b = 3;
+	var c = a*b+10;
+    document.write("<br>" + c);	
+}
+
+function myArgumentFunction(name) {
+    document.write("Welcome " + name + ".");
+}
+
+function greetFunction(greeting) {
+    document.write("Hello, " + greeting + ".");
+}
+function myMultFunction(a,b) {
+	return a*b;
+}
+    document.write(myMultFunction(79992,6000));
+
+function payWithSalesTax(mrp) {
+	return mrp+mrp*0.06;	
+}
+
+    document.write("<br>" + "MRP: Rs.237.  " + "Total with Tax: Rs. " + payWithSalesTax(237));
+
+</script>
+</head>
+
+
+<body>
+
+
+<p>When you click "Try it", a function will be called.</p>
+<p>The function will display a message.</p>
+
+
+<button onclick="myFunction()">Try it</button>
+<br>
+<br>
+<button onclick="myArgumentFunction('Osman')">Find my name</button>
+<br>
+<br>
+<button onclick="myArgumentFunction('Khan')">Find your name</button>
+
+
+<br>
+<form> 
+<input type="button" onclick="greetFunction('Good Morning!')" value="In the Morning"> 
+<input type="button" onclick="greetFunction('Good Evening!')" value="In the Evening"> 
+</form>
+
+<br>
+
+
+
+</body>
+</html>
+
+

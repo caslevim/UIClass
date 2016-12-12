@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+	<h1>Assigning Values</h1>
+
+
+	<p>In JavaScript the = operator is used to assign values to variables.</p>
+
+
+	<p id="demo1"> This is a Demo</p>
+	<p id="demo2"> This is a Demo</p>
+	<p id="demo3"> This is a Demo</p>
+	<p id="demo4"> This is a Demo</p>
+	<p id="demo5"> This is a Demo</p>
+	<p id="demo6"> This is a Demo</p>
+	<p>*******************************</p>
+	<p id="demo"> This is a Demo</p>
+	<script language="javascript" type="text/javascript">
+
+
+
+		var x = 5+3;
+		var y = x+6;
+		document.getElementById("demo1").innerHTML = x + y;
+
+
+
+		document.getElementById("demo2").innerHTML = (5 + 6) * 10;
+
+
+		document.getElementById("demo3").innerHTML = "Osman" + " "  + "Khan";
+
+
+
+
+
+// var x = 6; I will not be executed
+/* var x = 6; I will not be executed
+var x = 6; I will not be executed
+*/
+		var x = 5;      // Declare x, give it the value of 5
+		var y = x + 2;  // Declare y, give it the value of x + 2 
+		document.getElementById("demo4").innerHTML = y; // Write y to demo
+
+
+
+
+		var lastName = "Doe";
+		var lastname = "Peterson";
+		document.getElementById("demo5").innerHTML = lastName + " " + lastname;
+
+
+		a = 1;
+		b = 2;
+		c = a + b;
+		document.getElementById("demo6").innerHTML = c;
+
+		document.getElementById("demo").innerHTML = c + "<br>" + lastName + " " + lastname+ "<br>" + y + "<br>" + "Osman" + " "  + "Khan" ;
+
+
+	</script>
+
+</body>
+</html>

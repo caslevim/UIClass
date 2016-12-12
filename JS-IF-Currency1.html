@@ -1,0 +1,35 @@
+<!- Convert INR to USD to INR ->
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1><u>JavaScript Currency Conversion</u></h1>
+<br>
+<br>
+<h3>1 US Dollar equals</h3>
+<p><input id="inrupeestoday"> Indian Rupee</p>
+
+<p>Insert in Rupees or US Dollars below:</p>
+
+<p><input id="inrupee" onkeyup="convert('I')"> Indian Rupee</p>
+
+<p><input id="usdollar" onkeyup="convert('D')"> US Dollar</p> 
+
+
+<script>
+function convert(currency) {
+    var x;
+    if (currency == "I") {
+        x = document.getElementById("inrupee").value / document.getElementById("inrupeestoday").value;
+        document.getElementById("usdollar").value = x;
+    } else {
+        x = document.getElementById("usdollar").value * document.getElementById("inrupeestoday").value;
+        document.getElementById("inrupee").value = x;
+    }
+}
+</script>
+
+
+</body>
+</html>

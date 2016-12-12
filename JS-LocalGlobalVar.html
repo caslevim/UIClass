@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+  // We are in the default scope – the "window" object.
+  x = 3;	  // same as "window.x = 3"
+  var y = 4;  // same as "y = 4" or "window.y = 4"
+  {  // Introduce a block to creat a local scope
+     x = 0;		// Same as "window.x = 0"
+     var y = 1;	// This is a local variable y
+
+  }
+  alert("x=" + x + ", y=" + y);  // Print x=0, y=4
+</script>
+</head>
+
+
+</html>

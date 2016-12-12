@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Math.PI</h1>
+
+
+<script>
+
+//Math.PI returns the ratio of a circle's circumference to its diameter:
+document.write ("Value of PI is : " + Math.PI);
+
+
+//Math.round(x) returns the value of x rounded down to its nearest integer:
+document.write ("<br>" + "After rounding the Value x is:  " + Math.round(4.5));
+
+
+//Math.pow(x,y) returns the value of x to the power of y
+document.write ("<br>" + " Value of x to the power is: " + Math.pow(12,2));
+
+
+//Math.sqrt(x) returns the square root of x:
+document.write ("<br>" + " Value of square root of x is: " + Math.sqrt(80));
+
+//Math.sqrt(x) returns the square root of x:
+document.write ("<br>" + " Value of Round of Power of Square root of x is: " + Math.round(Math.pow(Math.sqrt(80),3)));
+
+
+
+//Math.abs(x) returns the absolute (positive) value of x:
+document.write ("<br>" + " Value of an Absolute (+ve) of x is: " + Math.abs(-6.4));
+
+
+//Math.ceil() rounds a number <strong>up</strong> to its nearest integer:
+document.write ("<br>" + " Value of Ceiling (Next whole number) x.x is: " + Math.ceil(3.72));
+
+
+//Math.floor(x) returns the value of x rounded down to its nearest integer
+document.write ("<br>" + " Value of Floor (Below whole number) is: " + Math.floor(5.8));
+
+
+//Math.sin(x) returns the sin of x (given in radians):
+//Angle in radians = (angle in degrees) * PI / 180.
+document.write ("<br>" +  "<br>" +
+"The sine value of 270 degrees is " + Math.sin(270 * Math.PI / 180));
+
+
+//Cosine
+document.write ("<br>" +  "<br>" +
+"The cosine value of 270 degrees is " + Math.cos(270 * Math.PI / 180));
+
+
+//Math.max() returns the highest value in a list of arguments
+
+document.write ("<br>" +  "<br>" +
+Math.max(1, 300, 133, -7, 88, 166));
+
+
+//Math.min() returns the lowest value in a list of arguments:
+document.write ("<br>" +  "<br>" +
+Math.min(1, 300, 133, -203, -7, 88, 166, 0));
+
+</script>
+</body>
+</html>

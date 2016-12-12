@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>My Web Page</h1>
+
+
+<p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+<p id="myTax">My Tax Due.</p>
+
+
+<p>
+<button type="button" onclick="myParFunction()">Para</button>
+<button type="button" onclick="myDivFunction()">Div</button>
+<button type="button" onclick="myTaxFunction()">Tax it</button>
+</p>
+
+
+<script>
+function myParFunction() {
+    document.getElementById("myPar").innerHTML = "Hello Osman.";
+}
+function myDivFunction() {
+    document.getElementById("myDiv").innerHTML = "How are you?";
+}
+function myTaxFunction() {
+	var salary = 10000;
+    document.getElementById("myTax").innerHTML = salary + salary*0.15;
+}
+
+</script>
+
+
+<p>When you click on "Try it", the two elements will change.</p>
+
+
+</body>
+</html>
+
+
+
+
+
+

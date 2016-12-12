@@ -1,0 +1,32 @@
+
+<html>
+
+<head>
+<title>Javascript - Nested loop and function call creating a table</title>
+<script type="text/javascript">
+	function addVat(price)
+		{return price*1.175}
+
+	function tableRow(car,price)
+		{document.writeln("<tr><td>"+car+"</td><td>"+price+"</td><td>"+addVat(price)+"</td></tr>")}
+
+	document.writeln("<h2>Car Price List</h2>")
+	document.writeln("<table border=1><tr><th>Model</th><th>Net Price</th><th>Inc VAT</th></tr>")
+
+	tableRow("Escort",9000)
+	tableRow("Focus",10000)
+	tableRow("KA",8000)
+
+document.writeln("</table>")</script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
